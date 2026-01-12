@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📚 CRUD Mahasiswa (REST API)</h1>
+
+    <form id="formMahasiswa">
+        <input type="hidden" id="id">
+        <input type="text" id="nama" placeholder="Nama Mahasiswa" required>
+        <input type="text" id="jurusan" placeholder="Jurusan" required>
+
+        <button type="submit" id="btnSubmit">Tambah</button>
+        <button type="button" id="btnCancel" onclick="batalEdit()" hidden>Batal</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Jurusan</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="dataMahasiswa"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
